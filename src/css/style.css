@@ -29,9 +29,9 @@ header {
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
-  max-width: 1193px;
+  max-width: 1146px;
   margin: auto;
-  padding: 0 21px;
+  padding-left: 3px;
 }
 
 header .logo {
@@ -64,25 +64,50 @@ nav a.frame {
   background: #2945FF;
   border-radius: 22px;
   color: #FFFFFF;
-  margin: 0 8px 0 20px;
+  margin-left: 20px;
   font-weight: 400;
 }
 
-.Hero-Componet {
+#Hero-Componet {
+  display: flex;
+  position: relative;
   margin: 38px auto 0;
-  max-width: 1169px;
+  padding-left: 23px;
+  max-width: 1192px;
+  justify-content: space-between;
 }
 
-.Hero-Componet h1 {
+#Hero-Componet .text{
+  position: relative;
+  height: fit-content;
+  top: 85px;
+}
+
+#Hero-Componet h1 {
   max-width: 380px;
   font-weight: 600;
   font-size: 68px;
   line-height: 111%;
+  margin-bottom: 37.56px;
+  color: #000545;
 }
 
-.Hero-Componet .text {
+#Hero-Componet .description {
   max-width: 443px;
-  font-weight: 600;
-  font-size: 68px;
-  line-height: 111%;
+  font-size: 18px;
+  line-height: 30px;
+  color: #393F4D;
+}
+
+#Hero-Componet img {
+  display: block;
+  margin: 38px 26px 0 0;
+}
+
+#Hero-Componet img:after {
+  content: "sdfsdfds";
+  display: inline-block;
+  height: 1000px;
+  width: 1000px;
+  background-color: #000000;
 }
