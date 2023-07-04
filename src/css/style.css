@@ -21,17 +21,25 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 body {
   font-family: 'Inter', sans-serif;
   letter-spacing: -0.04em;
+  height: auto;
 }
 
 header {
+  position: fixed;
   display: flex;
+  background: #FFFFFF;
   height: 87px;
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
   max-width: 1146px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 3px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 header .logo {
@@ -71,7 +79,7 @@ nav a.frame {
 #Hero-Componet {
   display: flex;
   position: relative;
-  margin: 38px auto 0;
+  margin: 125px auto 0;
   padding-left: 23px;
   max-width: 1192px;
   justify-content: space-between;
@@ -99,15 +107,57 @@ nav a.frame {
   color: #393F4D;
 }
 
-#Hero-Componet img {
+#Hero-Componet .img {
+  position: relative;
+  background-image: url(../img/solesavy-ur0-4ibMm54-unsplash\ 1.jpg);
+  height: 611px;
+  width: 465px;
   display: block;
   margin: 38px 26px 0 0;
 }
 
-#Hero-Componet img:after {
-  content: "sdfsdfds";
-  display: inline-block;
-  height: 1000px;
-  width: 1000px;
-  background-color: #000000;
+#Hero-Componet .img:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/Group\ of\ dots.png);
+  height: 205.82px;
+  width: 124px;
+  top: -38px;
+  left: -37px;
+  z-index: -1;
+}
+
+#Hero-Componet .img:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/Group\ of\ dots.png);
+  height: 205.82px;
+  width: 124px;
+  right: -26px;
+  bottom: -33.82px;
+}
+
+#News {
+  position: relative;
+}
+
+#News::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #F4F5FF;
+  top: -149.25px;
+  left: 0;
+  right: 0;
+  bottom: -120px;
+  transform: skew(0, 356deg);
+  z-index: -1;
+}
+
+#News .News-content {
+  position: relative;
+  width: 1140px;
+  margin: 73px auto 0;
 }
